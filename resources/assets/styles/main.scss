@@ -1,0 +1,34 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+@import "~lightgallery/dist/css/lightgallery.min";
+@import "~lightslider/dist/css/lightslider.min";
+@import "~aos/dist/aos";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/*";
+@import "components/*";
+@import "layouts/*";
+
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../fonts/DINNextLTArabic-Light.eot"); /* IE9 Compat Modes */
+  src:
+    url("../fonts/DINNextLTArabic-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DINNextLTArabic-Light.svg") format("svg"),
+    url("../fonts/DINNextLTArabic-Light.ttf") format("truetype"),
+    url("../fonts/DINNextLTArabic-Light.woff") format("woff"),
+    url("../fonts/DINNextLTArabic-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
